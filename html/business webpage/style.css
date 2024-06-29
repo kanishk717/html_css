@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.main{
+    width:100% ;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/Cozy.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 119vh;
+}
+.navbar{
+    margin: auto;
+    padding-left: 30px;
+    height:75px;
+    
+}
+.icon{
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+.logo{
+    color: aliceblue;
+    font-size: 30px;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+
+}
+.menu{
+    
+    float: left;
+    padding-left: 250px;
+    height: 30px;
+}
+ul {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style-type: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5 ease;
+}
+ul li a:hover{
+    color: orangered;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 27px;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    color: #ff7200;
+    background: transparent;
+    border: 1px solid #ff7200;
+}
+.srch:hover{
+    background-color: aliceblue;
+    
+}
+.btn {
+    height:40px;
+    width: 80px;
+    background: #ff7200;
+
+}
+.btn:hover{
+    background-color: white;
+    
+}

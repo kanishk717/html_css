@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Example</title>
+    <style>
+        /* Block Element */
+        .block {
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        /* Inline Element */
+        .inline {
+            display: inline;
+            padding: 5px;
+            background-color: lightgreen;
+            width: 100px; 
+            margin: 15px; 
+                     
+        }
+        /* Inline-Block Element */
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>The block class represents a block-level element. It's a element with a fixed width and height, and it takes up the entire width of its parent container. Block-level elements start on a new line and stack vertically.</p>
+    
+    <div class="block">Block Element 01</div>
+    <div class="block">Block Element 02</div>
+    <hr>
+    <p>The inline class represents an inline element.  <span class="inline"> It's a element with padding and a background color.</span> Inline elements <span class="inline_blue" > flow within the content, </span>and they do not start on a new line. They stack horizontally.  </p>
+
+    <div class="inline">Inline Element</div>
+    <br><br><br>  <hr>  
+    <p>The inline-block class represents an inline-block element. It's another element with a fixed width and height. Inline-block elements are similar to inline elements in that they flow within the content, but they can have specified dimensions and still flow horizontally.</p>
+    <div class="inline-block">Inline-Block Element 01</div>
+    <div class="inline-block">Inline-Block Element 02</div>
+</body>
+</html>

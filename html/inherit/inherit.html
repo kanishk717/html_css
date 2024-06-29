@@ -1,0 +1,116 @@
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Inheritance Example</title>
+    <style>
+        /* Define a CSS rule for the parent element */
+        .parent {
+            font-family: Arial, sans-serif;
+            color: blue;
+        }
+
+        /* Define a CSS rule for the child element */
+        .child {
+            /* Child element inherits font-family and color from the parent */
+            font-weight: bold; /* Explicitly set font-weight for the child */
+        }
+
+        /* Example using "initial" */
+        .initial-example {
+            color: red;
+
+        }
+
+        /* Reset text color to the initial default */
+        .initial-example p {
+            color: red;
+        }
+
+        /* Example using "inherit" */
+        .inherit-example {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        /* Inherit font family from the parent */
+        .inherit-example .child {
+            font-family: inherit;
+            font-weight: bold; /* Added for emphasis */
+        }
+
+        /* Example using "unset" */
+        .unset-example {
+            font-family: Arial, sans-serif; /* Set a custom font-family */
+            color: red; /* Set a custom text color */
+        }
+
+        /* Reset font-family to inherited value, and text color to initial */
+        
+        .unset-example p{
+            color: initial;
+        }
+        .p1{
+            font-family: 'Gill Sans', 'Gill Sans MT';
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>This is a parent element.</p>
+        
+        <div class="child">
+            <p>This is a child element.</p>
+        </div> 
+    </div>
+        
+    
+    <div>
+        <h2>Using the "initial" and "inherit" CSS Keywords</h2>
+
+        <!-- Example with "initial" -->
+        <div class="initial-example">
+            <h1>Im red</h1>
+            <p>This text is initially red.</p>
+            <p>This text inherits the initial color (browser default).</p>
+        </div>
+    
+        <!-- Example with "inherit" -->
+        <div class="inherit-example">
+            <p>This text has a custom font family (Arial, sans-serif).</p>
+            <p>This text inherits the font family and is bold.</p>
+        </div>
+    </div>
+    <h2>Using the "unset" CSS Keyword</h2>
+    <p class="p1">sh</p>
+    <div class="unset-example">
+        <h4>Hey hi</h4>
+        <p>This text has a custom font-family (Arial, sans-serif) and color (red).</p>
+        <p>These properties are reset to their natural/inherited values.</p>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+    Inheritance is a useful feature in CSS as it allows you to define common styles at 
+        higher levels in your document hierarchy and have child elements inherit those styles, 
+        reducing the need for repetitive styling declarations.
+ -->
+
+ <!-- 
+    initial: Sets the CSS property to its default initial value, effectively overriding any previous declarations or inherited values.
+
+        Example: color: initial; sets the text color to its initial browser default.
+
+    inherit: Forces an element to inherit the computed value of a property from its parent element, even if the property is not typically inherited.
+
+        Example: font-family: inherit; makes a child element use the same font family as its parent.
+  -->
+
+ <!-- 
+    The unset CSS keyword is used to reset a property to its natural or inherited value 
+        if it has been previously modified. If a property hasn't been explicitly set,
+        unset behaves the same way as initial, setting it to the default value.
+  -->
